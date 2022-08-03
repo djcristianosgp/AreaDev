@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GH2avLih9wU/mapJHL6/4MHhFxvrTdWpm1Q4PDAq1Mq9Y+fq1jrEXTyFOyOcvdOvVV7+TQj2WwQWYHfKL41dUg==",
+  "dgSpecHash": "kN6LV0W0htXoyyKhCGT0MrRM10OMDHDrvvfH3tOSIXE8LdZL4vjPOjayzbITz1G+xebWZevDcYLn1ZdLVIkP1Q==",
   "success": true,
-  "projectFilePath": "C:\\AreaDev\\Area27\\Area27\\Area27\\Area27.csproj",
+  "projectFilePath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Area27\\Area27.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Cristiano Groberio\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Homologacao01\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

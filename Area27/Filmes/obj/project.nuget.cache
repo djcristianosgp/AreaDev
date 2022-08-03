@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Reaqy/ZBuXJ9UVUG+pe48BUdQeuIv/2E23IwTEGqDnNKBQIcy0gOCbna/E8TCKUu88u/JkJS65jHnc/EHmJ3vw==",
+  "dgSpecHash": "5/rwxLVDlyy3OyAEBWE33vJi4vE8wEjHeybMlcCc6E7vENPxvYtGO9yS6/jTSkVXSMxlIlYRs7ddqOkmnp4aNg==",
   "success": true,
-  "projectFilePath": "C:\\AreaDev\\Area27\\Area27\\Filmes\\Filmes.csproj",
+  "projectFilePath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Cristiano Groberio\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Homologacao01\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

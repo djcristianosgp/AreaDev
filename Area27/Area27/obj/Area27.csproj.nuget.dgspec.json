@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AreaDev\\Area27\\Area27\\Area27\\Area27.csproj": {}
+    "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Area27\\Area27.csproj": {}
   },
   "projects": {
-    "C:\\AreaDev\\Area27\\Area27\\Area27\\Area27.csproj": {
+    "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Area27\\Area27.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AreaDev\\Area27\\Area27\\Area27\\Area27.csproj",
+        "projectUniqueName": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Area27\\Area27.csproj",
         "projectName": "Area27",
-        "projectPath": "C:\\AreaDev\\Area27\\Area27\\Area27\\Area27.csproj",
-        "packagesPath": "C:\\Users\\Cristiano Groberio\\.nuget\\packages\\",
-        "outputPath": "C:\\AreaDev\\Area27\\Area27\\Area27\\obj\\",
+        "projectPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Area27\\Area27.csproj",
+        "packagesPath": "C:\\Users\\Homologacao01\\.nuget\\packages\\",
+        "outputPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Area27\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cristiano Groberio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Homologacao01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,14 +29,15 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/AMskZhWucCf6UbNgGj8kbtGUTgMLi6kDQRYDfh8LLMPHvdwfpZ/api": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\AreaDev\\Area27\\Area27\\Filmes\\Filmes.csproj": {
-                "projectPath": "C:\\AreaDev\\Area27\\Area27\\Filmes\\Filmes.csproj"
+              "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj": {
+                "projectPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj"
               }
             }
           }
@@ -70,21 +73,23 @@
         }
       }
     },
-    "C:\\AreaDev\\Area27\\Area27\\Filmes\\Filmes.csproj": {
+    "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AreaDev\\Area27\\Area27\\Filmes\\Filmes.csproj",
+        "projectUniqueName": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
         "projectName": "Filmes",
-        "projectPath": "C:\\AreaDev\\Area27\\Area27\\Filmes\\Filmes.csproj",
-        "packagesPath": "C:\\Users\\Cristiano Groberio\\.nuget\\packages\\",
-        "outputPath": "C:\\AreaDev\\Area27\\Area27\\Filmes\\obj\\",
+        "projectPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
+        "packagesPath": "C:\\Users\\Homologacao01\\.nuget\\packages\\",
+        "outputPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cristiano Groberio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Homologacao01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +98,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/AMskZhWucCf6UbNgGj8kbtGUTgMLi6kDQRYDfh8LLMPHvdwfpZ/api": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
