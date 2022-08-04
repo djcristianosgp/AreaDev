@@ -10,12 +10,17 @@
 
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Entidades\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ID3" Version="0.6.0" />
     <PackageReference Include="TagLibSharp" Version="2.3.0" />
     <PackageReference Include="Uno.UI" Version="4.4.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Uteis\Uteis.csproj" />
   </ItemGroup>
 
 </Project>

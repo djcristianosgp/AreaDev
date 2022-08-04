@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using Uteis.Musicas;
 
 namespace Musicas.Telas
 {
@@ -8,11 +9,14 @@ namespace Musicas.Telas
         {
             InitializeComponent();
         }
+        
+        EntMusicas eMusica = new EntMusicas();
+
         string[] sLista = { "Artista", "Ano", "Genero" };
 
         private void FrmGerenciarMusicas_Load(object sender, EventArgs e)
         {
-
+            Inicializa();
         }
 
         public void Inicializa()
@@ -23,7 +27,7 @@ namespace Musicas.Telas
         public void GetOrganiza()
         {
             cbxOrganizarPor.Items.Clear();
-            cbxOrganizarPor.Items.Add(sLista);
+            cbxOrganizarPor.Items.AddRange(sLista);
             if (cbxOrganizarPor.Items.Count > 0)
                 cbxOrganizarPor.SelectedIndex = 0;
         }
@@ -77,14 +81,20 @@ namespace Musicas.Telas
             }
         }
 
-        public void GetMoveMusicas(string sPastaDestino, string sOrganiza)
+        public void PostMoveMusicas()
         {
-
+            string sPastaDestino = txtPastaDestino.Text, sOrganiza = cbxOrganizarPor.SelectedItem.ToString();
         }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
             GetListaMusicas(txtPastaOrigem.Text);
+        }
+
+        private void BtnOrganizar_Click(object sender, EventArgs e)
+        {
+            Thread ts = new Thread(PostMoveMusicas);
+            ts.Start();
         }
     }
 }

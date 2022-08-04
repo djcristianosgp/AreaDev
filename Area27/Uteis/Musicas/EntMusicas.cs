@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Musicas.Entidades
+namespace Uteis.Musicas
 {
     public class EntMusicas
     {
