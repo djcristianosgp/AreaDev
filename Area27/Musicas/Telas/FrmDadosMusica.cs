@@ -20,16 +20,12 @@
             var fileee = TagLib.File.Create(sMusica).Tag;
             txtRetorno.Clear();
 
-            txtRetorno.Text += "1 - " + fileee.Copyright + "\r\n";
-                txtRetorno.Text += "2 - " + fileee.Composers.ToList() + "\r\n";
-            txtRetorno.Text += "3 - " + fileee.Artists.ToList() + "\r\n";
-            txtRetorno.Text += "4 - " + fileee.Genres.ToList() + "\r\n";
+            txtRetorno.Text += "4 - " + fileee.Genres[0] + "\r\n";
             txtRetorno.Text += "5 - " + fileee.Year + "\r\n";
-            txtRetorno.Text += "6 - " + fileee.BeatsPerMinute + "\r\n";
-            txtRetorno.Text += "7 - " + fileee.Length + "\r\n";
-            txtRetorno.Text += "8 - " + fileee.JoinedArtists + "\r\n";
+            txtRetorno.Text += "8 - " + fileee.Artists[0] + "\r\n";
             txtRetorno.Text += "9 - " + fileee.Track + "\r\n";
-            txtRetorno.Text += "10 - " + fileee.TrackCount + "\r\n";
+            txtRetorno.Text += "11 - " + fileee.Title + "\r\n";
+            txtRetorno.Text += "12 - " + sMusica + "\r\n";
             //1 -
             //2 - System.String[]
             //3 - System.String[]
