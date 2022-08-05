@@ -16,11 +16,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Musicas", "Musicas\Musicas.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entidades", "Entidades", "{11625742-B68C-4E8C-AAF1-C467B993B01E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uteis", "Uteis\Uteis.csproj", "{53410014-807A-47C8-9BA3-52A0B0C33D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uteis", "Uteis\Uteis.csproj", "{53410014-807A-47C8-9BA3-52A0B0C33D9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerAPI", "ServerAPI", "{F450BA5B-B09C-40C1-8CA5-FC8FCC9C0282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "area-api", "area-api\area-api.csproj", "{F74E6229-9A7B-4A83-96E6-0DDBC24B1644}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "area-api", "area-api\area-api.csproj", "{F74E6229-9A7B-4A83-96E6-0DDBC24B1644}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

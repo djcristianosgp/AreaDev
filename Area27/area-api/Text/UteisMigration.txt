@@ -1,0 +1,6 @@
+﻿--> Entrar na pasta do projeto
+cd .\area-api\
+--> Criar Migration
+dotnet ef migrations add %name%
+--> Update Data Base
+dotnet ef database update
