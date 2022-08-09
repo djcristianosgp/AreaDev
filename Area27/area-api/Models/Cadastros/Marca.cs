@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace area_api.Models.Cadastros;
 [Table("marca")]
@@ -30,5 +31,6 @@ public class Marca
     [Column(name: "ativo")]
     public bool Ativo { get; set; } = true;
 
+    [JsonIgnore]
     public ICollection<Produto>? Produto { get; set; }
 }

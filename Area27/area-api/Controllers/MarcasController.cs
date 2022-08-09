@@ -9,7 +9,7 @@ namespace area_api.Controllers
     [Route("[controller]")]
     public class MarcasController : ControllerBase
     {
-       private readonly AppDbContext _context;
+        private readonly AppDbContext _context;
 
         public MarcasController(AppDbContext context)
         {
@@ -25,23 +25,29 @@ namespace area_api.Controllers
             return marcas;
         }
 
-        [HttpGet("{id:int}",Name = "ObterMarcaCodigo")]
-        public ActionResult<Marca> GetMarcaid(int id)
+        [HttpGet("{id:int}", Name = "ObterMarcaCodigo")]
+        public ActionResult<Marca> GetMarcaId(int id)
         {
             var marca = _context.Marcas.FirstOrDefault(m => m.MarcaId == id);
             if (marca is null)
-                return NotFound("Marca Não Encontrada!!");
+                return NotFound("Marca não Encontrada!!");
             return marca;
         }
 
-        //[HttpGet("descricao/{descricao:string}")]
-        //public ActionResult<Marca> GetMarcaDescricao(string descricao)
-        //{
-        //    var marca = _context.Marcas.FirstOrDefault(m => m.Descricao == descricao);
-        //    if (marca is null)
-        //        return NotFound("Marca Não Encontrada!!");
-        //    return marca;
-        //}
+        [HttpGet("{descricao}")]
+        public ActionResult<Marca> GetMarcaDescricao(string descricao)
+        {
+            var marca = _context.Marcas.FirstOrDefault(m => m.Descricao == descricao.ToUpper());
+            if (marca is null)
+                return NotFound("Marca não Encontrada!!");
+            return marca;
+        }
+
+        [HttpGet("produtos")]
+        public ActionResult<IEnumerable<Marca>> GetMarcaProduto()
+        {
+            return _context.Marcas.Include(p => p.Produto).ToList();
+        }
 
         [HttpPost]
         public ActionResult PostMarca(Marca marca)
@@ -52,16 +58,29 @@ namespace area_api.Controllers
             _context.SaveChanges();
 
             return new CreatedAtRouteResult("ObterMarcaCodigo",
-                new {id = marca.MarcaId},marca);
+                new { id = marca.MarcaId }, marca);
         }
 
         [HttpPut("{id:int}")]
         public ActionResult PutMarca(int id, Marca marca)
         {
-            if(id != marca.MarcaId)
+            if (id != marca.MarcaId)
                 return BadRequest("Codigo não confere!!!");
 
             _context.Entry(marca).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return Ok(marca);
+        }
+
+        [HttpDelete("{id:int}")]
+        public ActionResult DeleteMarca(int id)
+        {
+            var marca = _context.Marcas.FirstOrDefault(m => m.MarcaId == id);
+            if (marca is null)
+                return NotFound("Marca não encontrada!!!");
+
+            _context.Marcas.Remove(marca);
             _context.SaveChanges();
 
             return Ok(marca);
