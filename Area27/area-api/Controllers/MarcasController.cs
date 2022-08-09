@@ -19,71 +19,133 @@ namespace area_api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Marca>> GetMarcas()
         {
-            var marcas = _context.Marcas.ToList();
-            if (marcas is null)
-                return NotFound("Marcas não encontradas!!");
-            return marcas;
+            try
+            {
+                var marcas = _context.Marcas.AsNoTracking().ToList();
+                if (marcas is null)
+                    return NotFound("Marcas não encontradas!!");
+                return marcas;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpGet("{id:int}", Name = "ObterMarcaCodigo")]
         public ActionResult<Marca> GetMarcaId(int id)
         {
-            var marca = _context.Marcas.FirstOrDefault(m => m.MarcaId == id);
-            if (marca is null)
-                return NotFound("Marca não Encontrada!!");
-            return marca;
+            try
+            {
+                var marca = _context.Marcas.FirstOrDefault(m => m.MarcaId == id);
+                if (marca is null)
+                    return NotFound($"Marca com id={id} não Encontrada!!");
+                return marca;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpGet("{descricao}")]
         public ActionResult<Marca> GetMarcaDescricao(string descricao)
         {
-            var marca = _context.Marcas.FirstOrDefault(m => m.Descricao == descricao.ToUpper());
-            if (marca is null)
-                return NotFound("Marca não Encontrada!!");
-            return marca;
+            try
+            {
+                var marca = _context.Marcas.AsNoTracking().FirstOrDefault(m => m.Descricao == descricao.ToUpper());
+                if (marca is null)
+                    return NotFound($"Marca '{descricao}' não Encontrada!!");
+                return marca;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpGet("produtos")]
         public ActionResult<IEnumerable<Marca>> GetMarcaProduto()
         {
-            return _context.Marcas.Include(p => p.Produto).ToList();
+            try
+            {
+                return _context.Marcas.Include(p => p.Produto).AsNoTracking().ToList();
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
+        }
+
+        [HttpGet("produtos/{descricao}")]
+        public ActionResult<IEnumerable<Marca>> GetMarcaProdutoDescricao(string descricao)
+        {
+            try
+            {
+                return _context.Marcas.Include(p => p.Produto).Where(m => m.Descricao == descricao.ToUpper()).AsNoTracking().ToList();
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpPost]
         public ActionResult PostMarca(Marca marca)
         {
-            if (marca is null)
-                return BadRequest();
-            _context.Marcas.Add(marca);
-            _context.SaveChanges();
+            try
+            {
+                if (marca is null)
+                    return BadRequest();
+                _context.Marcas.Add(marca);
+                _context.SaveChanges();
 
-            return new CreatedAtRouteResult("ObterMarcaCodigo",
-                new { id = marca.MarcaId }, marca);
+                return new CreatedAtRouteResult("ObterMarcaCodigo",
+                    new { id = marca.MarcaId }, marca);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpPut("{id:int}")]
         public ActionResult PutMarca(int id, Marca marca)
         {
-            if (id != marca.MarcaId)
-                return BadRequest("Codigo não confere!!!");
+            try
+            {
+                if (id != marca.MarcaId)
+                    return BadRequest($"Codigo {id} não confere com {marca.MarcaId}!!!");
 
-            _context.Entry(marca).State = EntityState.Modified;
-            _context.SaveChanges();
+                _context.Entry(marca).State = EntityState.Modified;
+                _context.SaveChanges();
 
-            return Ok(marca);
+                return Ok(marca);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpDelete("{id:int}")]
         public ActionResult DeleteMarca(int id)
         {
-            var marca = _context.Marcas.FirstOrDefault(m => m.MarcaId == id);
-            if (marca is null)
-                return NotFound("Marca não encontrada!!!");
+            try
+            {
+                var marca = _context.Marcas.FirstOrDefault(m => m.MarcaId == id);
+                if (marca is null)
+                    return NotFound($"Marca com id={id} não encontrada!!!");
 
-            _context.Marcas.Remove(marca);
-            _context.SaveChanges();
+                _context.Marcas.Remove(marca);
+                _context.SaveChanges();
 
-            return Ok(marca);
+                return Ok(marca);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
     }
 }

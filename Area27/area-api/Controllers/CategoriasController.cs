@@ -19,72 +19,133 @@ namespace area_api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> GetCategorias()
         {
-            var categoria = _context.Categorias.ToList();
-            if (categoria is null)
-                return NotFound("Categorias não encontradas!!");
-            return categoria;
+            try
+            {
+                var categoria = _context.Categorias.AsNoTracking().ToList();
+                if (categoria is null)
+                    return NotFound("Categorias não encontradas!!");
+                return categoria;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpGet("{id:int}", Name = "ObterCategoriaCodigo")]
         public ActionResult<Categoria> GetCategoriaId(int id)
         {
-            var categoria = _context.Categorias.FirstOrDefault(m => m.CategoriaId == id);
-            if (categoria is null)
-                return NotFound("Categoria não Encontrada!!");
-            return categoria;
+            try
+            {
+                var categoria = _context.Categorias.FirstOrDefault(m => m.CategoriaId == id);
+                if (categoria is null)
+                    return NotFound($"Categoria com id={id} não Encontrada!!");
+                return categoria;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpGet("{descricao}")]
         public ActionResult<Categoria> GetCategoriaDescricao(string descricao)
         {
-            var categoria = _context.Categorias.FirstOrDefault(m => m.Descricao == descricao);
-            if (categoria is null)
-                return NotFound("Categoria não Encontrada!!");
-            return categoria;
+            try
+            {
+                var categoria = _context.Categorias.AsNoTracking().FirstOrDefault(m => m.Descricao == descricao);
+                if (categoria is null)
+                    return NotFound($"Categoria '{descricao}' não Encontrada!!");
+                return categoria;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpGet("produtos")]
         public ActionResult<IEnumerable<Categoria>> GetCategoriaProduto()
         {
-            return _context.Categorias.Include(p => p.Produto).ToList();
+            try
+            {
+                return _context.Categorias.Include(p => p.Produto).AsNoTracking().ToList();
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
+        [HttpGet("produtos/{descricao}")]
+        public ActionResult<IEnumerable<Categoria>> GetCategoriaProdutoDescricao(string descricao)
+        {
+            try
+            {
+                return _context.Categorias.Include(p => p.Produto).Where(c => c.Descricao == descricao.ToUpper()).AsNoTracking().ToList();
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
+        }
 
         [HttpPost]
         public ActionResult PostCategoria(Categoria categoria)
         {
-            if (categoria is null)
-                return BadRequest();
-            _context.Categorias.Add(categoria);
-            _context.SaveChanges();
+            try
+            {
+                if (categoria is null)
+                    return BadRequest();
+                _context.Categorias.Add(categoria);
+                _context.SaveChanges();
 
-            return new CreatedAtRouteResult("ObterCategoriaCodigo",
-                new { id = categoria.CategoriaId }, categoria);
+                return new CreatedAtRouteResult("ObterCategoriaCodigo",
+                    new { id = categoria.CategoriaId }, categoria);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpPut("{id:int}")]
         public ActionResult PutCategoria(int id, Categoria categoria)
         {
-            if (id != categoria.CategoriaId)
-                return BadRequest("Codigo não confere!!!");
+            try
+            {
+                if (id != categoria.CategoriaId)
+                    return BadRequest($"Codigo {id} não confere com {categoria.CategoriaId}!!!");
 
-            _context.Entry(categoria).State = EntityState.Modified;
-            _context.SaveChanges();
+                _context.Entry(categoria).State = EntityState.Modified;
+                _context.SaveChanges();
 
-            return Ok(categoria);
+                return Ok(categoria);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
 
         [HttpDelete("{id:int}")]
         public ActionResult DeleteCategoria(int id)
         {
-            var categoria = _context.Categorias.FirstOrDefault(m => m.CategoriaId == id);
-            if (categoria is null)
-                return NotFound("Categoria não encontrada!!!");
+            try
+            {
+                var categoria = _context.Categorias.FirstOrDefault(m => m.CategoriaId == id);
+                if (categoria is null)
+                    return NotFound($"Categoria com id={id} não encontrada!!!");
 
-            _context.Categorias.Remove(categoria);
-            _context.SaveChanges();
+                _context.Categorias.Remove(categoria);
+                _context.SaveChanges();
 
-            return Ok(categoria);
+                return Ok(categoria);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao exeutar sua solicitação!!!");
+            }
         }
     }
 }

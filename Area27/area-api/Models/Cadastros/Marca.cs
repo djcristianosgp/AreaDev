@@ -31,6 +31,6 @@ public class Marca
     [Column(name: "ativo")]
     public bool Ativo { get; set; } = true;
 
-    [JsonIgnore]
+    //[JsonIgnore]
     public ICollection<Produto>? Produto { get; set; }
 }
