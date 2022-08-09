@@ -12,8 +12,8 @@ using area_api.Context;
 namespace area_api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220808185917_PopularCategorias")]
-    partial class PopularCategorias
+    [Migration("20220809121833_AjusteInicial")]
+    partial class AjusteInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,77 +28,97 @@ namespace area_api.Migrations
                 {
                     b.Property<int>("CategoriaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("categoriaid");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CategoriaId"));
 
                     b.Property<bool>("Ativo")
-                        .HasColumnType("boolean");
+                        .HasColumnType("boolean")
+                        .HasColumnName("ativo");
 
                     b.Property<DateTime>("Datacadastro")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("datacadastro");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("descricao");
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("Categoria");
+                    b.ToTable("categoria");
                 });
 
             modelBuilder.Entity("area_api.Models.Cadastros.Marca", b =>
                 {
                     b.Property<int>("MarcaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("marcaid");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("MarcaId"));
 
                     b.Property<bool>("Ativo")
-                        .HasColumnType("boolean");
+                        .HasColumnType("boolean")
+                        .HasColumnName("ativo");
 
                     b.Property<DateTime>("Datacadastro")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("datacadastro");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("descricao");
 
                     b.HasKey("MarcaId");
 
-                    b.ToTable("Marca");
+                    b.ToTable("marca");
                 });
 
             modelBuilder.Entity("area_api.Models.Cadastros.Produto", b =>
                 {
                     b.Property<int>("ProdutoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("produtoid");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProdutoId"));
 
                     b.Property<bool>("Ativo")
-                        .HasColumnType("boolean");
+                        .HasColumnType("boolean")
+                        .HasColumnName("ativo");
 
                     b.Property<int>("CategoriaId")
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("categoriaid");
+
+                    b.Property<string>("CodigoGtin")
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("codigogtin");
 
                     b.Property<DateTime>("Datacadastro")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("datacadastro");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
+                        .HasColumnType("character varying(200)")
+                        .HasColumnName("descricao");
 
                     b.Property<int>("MarcaId")
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("marcaid");
 
                     b.Property<decimal>("Preco")
-                        .HasColumnType("numeric(10,2)");
+                        .HasColumnType("numeric(10,2)")
+                        .HasColumnName("preco");
 
                     b.HasKey("ProdutoId");
 
@@ -106,7 +126,7 @@ namespace area_api.Migrations
 
                     b.HasIndex("MarcaId");
 
-                    b.ToTable("Produto");
+                    b.ToTable("produto");
                 });
 
             modelBuilder.Entity("area_api.Models.Cadastros.Produto", b =>
