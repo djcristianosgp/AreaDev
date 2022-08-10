@@ -1,5 +1,5 @@
-﻿using Dapper.Contrib.Extensions;
-using area_api_minimal.Data;
+﻿using area_api_minimal.Data;
+using Dapper.Contrib.Extensions;
 using static area_api_minimal.Data.TarefaContext;
 
 namespace area_api_minimal.Endpoints
@@ -12,11 +12,50 @@ namespace area_api_minimal.Endpoints
 
             app.MapGet("/tarefas", async (GetConnection connectionGetter) =>
             {
-                using var con = await connectionGetter();
-                var tarefas = con.GetAll<Tarefa>().ToList();
-                if (tarefas is null)
-                    return Results.NotFound();
-                return Results.Ok(tarefas);
+                try
+                {
+                    using var con = await connectionGetter();
+                    var tarefas = con.GetAll<Tarefa>().ToList();
+                    if (tarefas is null)
+                        return Results.NotFound();
+                    return Results.Ok(tarefas);
+                }
+                catch (Exception ex)
+                {
+                    return Results.BadRequest(ex.Message);
+                }
+            });
+
+            app.MapGet("/tarefas/{id:int}", async (GetConnection connectionGetter,int id) =>
+            {
+                try
+                {
+                    using var con = await connectionGetter();
+                    var tarefas = con.Get<Tarefa>(id);
+                    if (tarefas is null)
+                        return Results.NotFound();
+                    return Results.Ok(tarefas);
+                }
+                catch (Exception ex)
+                {
+                    return Results.BadRequest(ex.Message);
+                }
+            });
+
+            app.MapGet("/tarefas/{status}", async (GetConnection connectionGetter, string status) =>
+            {
+                try
+                {
+                    using var con = await connectionGetter();
+                    var tarefas = con.GetAll<Tarefa>().Where(s => s.status.Contains(status.ToUpper())).ToList();
+                    if (tarefas is null)
+                        return Results.NotFound();
+                    return Results.Ok(tarefas);
+                }
+                catch (Exception ex)
+                {
+                    return Results.BadRequest(ex.Message);
+                }
             });
         }
     }

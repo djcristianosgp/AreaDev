@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using Npgsql;
+using System.Data.SqlClient;
 using static area_api_minimal.Data.TarefaContext;
 
 namespace area_api_minimal.Extensions
@@ -12,7 +13,7 @@ namespace area_api_minimal.Extensions
             builder.Services.AddScoped<GetConnection>(sp =>
             async () =>
             {
-                var connection = new SqlConnection(connectionString);
+                var connection = new NpgsqlConnection(connectionString);
                 await connection.OpenAsync();
                 return connection;
             });
