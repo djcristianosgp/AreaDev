@@ -1,0 +1,27 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Clique aqui para contar</button>
+<button class="btn btn-primary" @onclick="ZeroCount">Clique aqui para zerar</button>
+<button class="btn btn-primary" @onclick="mensagemView">Mensagem</button>
+
+@code {
+    private static int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+    private void ZeroCount()
+    {
+        currentCount = 0;
+    }
+    public event Action<string> OnMensagem;
+    private void mensagemView()
+    {
+        OnMensagem?.Invoke("Seu contator está em " + currentCount);
+    }
+}
