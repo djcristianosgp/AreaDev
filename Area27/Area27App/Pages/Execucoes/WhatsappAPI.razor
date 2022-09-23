@@ -30,7 +30,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        lWhatsapis = await httpas.GetJsonAsync<List<WhatsAPI>>("Dados/ListaNumeros.json");
+        lWhatsapis = await https.GetJsonAsync<List<WhatsAPI>>("Dados/ListaNumeros.json");
     }
 
     public List<WhatsAPI> lWhatsapis = new List<WhatsAPI>();
