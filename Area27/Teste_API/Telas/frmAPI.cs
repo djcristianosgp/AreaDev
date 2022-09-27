@@ -89,7 +89,7 @@ namespace Teste_API.Telas
 
         private void btnAddQuery_Click(object sender, EventArgs e)
         {
-            dtQueryParameters.Rows.Add("QueryName", "QueryValue");
+            dtQueryParameters.Rows.Add("QueryName "+ dtQueryParameters.Rows.Count, "QueryValue");
             PreparaTXTEndPointResult();
         }
 
@@ -124,7 +124,7 @@ namespace Teste_API.Telas
 
         private void btnAddHeader_Click(object sender, EventArgs e)
         {
-            dtHeaderParameters.Rows.Add("HeaderName", "HeaderValue");
+            dtHeaderParameters.Rows.Add("HeaderName "+ dtHeaderParameters.Rows.Count, "HeaderValue");
             PreparaHeader();
         }
 
@@ -169,7 +169,6 @@ namespace Teste_API.Telas
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                throw;
             }
         }
 

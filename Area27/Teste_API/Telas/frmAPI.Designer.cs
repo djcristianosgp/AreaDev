@@ -215,8 +215,6 @@
             this.txtEndpointUri.Name = "txtEndpointUri";
             this.txtEndpointUri.Size = new System.Drawing.Size(618, 23);
             this.txtEndpointUri.TabIndex = 1;
-            this.txtEndpointUri.Text = "https://service-atendimento-dev.azurewebsites.net/api/v1/prontuario/relatorioexam" +
-    "es/citopatologico";
             this.txtEndpointUri.TextChanged += new System.EventHandler(this.txtEndpointUri_TextChanged);
             // 
             // label1
