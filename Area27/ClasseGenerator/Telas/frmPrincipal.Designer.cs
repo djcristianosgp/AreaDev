@@ -32,6 +32,7 @@
             this.mnArquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.mnGerador = new System.Windows.Forms.ToolStripMenuItem();
             this.stPrincipal = new System.Windows.Forms.StatusStrip();
+            this.muGeradordeSenha = new System.Windows.Forms.ToolStripMenuItem();
             this.mnPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +40,8 @@
             // 
             this.mnPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnArquivo,
-            this.mnGerador});
+            this.mnGerador,
+            this.muGeradordeSenha});
             this.mnPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnPrincipal.Name = "mnPrincipal";
             this.mnPrincipal.Size = new System.Drawing.Size(800, 24);
@@ -67,6 +69,13 @@
             this.stPrincipal.TabIndex = 2;
             this.stPrincipal.Text = "statusStrip1";
             // 
+            // muGeradordeSenha
+            // 
+            this.muGeradordeSenha.Name = "muGeradordeSenha";
+            this.muGeradordeSenha.Size = new System.Drawing.Size(112, 20);
+            this.muGeradordeSenha.Text = "Gerador de Senha";
+            this.muGeradordeSenha.Click += new System.EventHandler(this.muGeradordeSenha_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -92,5 +101,6 @@
         private ToolStripMenuItem mnArquivo;
         private ToolStripMenuItem mnGerador;
         private StatusStrip stPrincipal;
+        private ToolStripMenuItem muGeradordeSenha;
     }
 }

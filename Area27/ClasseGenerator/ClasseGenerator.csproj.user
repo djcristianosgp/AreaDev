@@ -4,6 +4,9 @@
     <Compile Update="Telas\frmGenerator.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Telas\FrmGeradordeSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Telas\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

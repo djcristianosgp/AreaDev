@@ -23,5 +23,12 @@ namespace ClasseGenerator.Telas
             FormGerador.MdiParent = this;
             FormGerador.Show();
         }
+
+        private void muGeradordeSenha_Click(object sender, EventArgs e)
+        {
+            FrmGeradordeSenha FormGerador = new FrmGeradordeSenha();
+            FormGerador.MdiParent = this;
+            FormGerador.Show();
+        }
     }
 }
