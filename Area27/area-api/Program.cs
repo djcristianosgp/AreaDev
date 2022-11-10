@@ -44,7 +44,7 @@ Enter 'Bearer' [space]. Exemple: \'Bearer 123456abcdef\'",
     });
 });
 
-string postgresqlConection = builder.Configuration.GetConnectionString("postgresql");
+string postgresqlConection = builder.Configuration.GetConnectionString("postgresqlCon");
 
 builder.Services.AddDbContext<AppDbContext>(opitions =>
         opitions.UseNpgsql(postgresqlConection));

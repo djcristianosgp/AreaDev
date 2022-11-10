@@ -8,7 +8,7 @@ namespace area_api_minimal.Extensions
     {
         public static WebApplicationBuilder AddPersistence(this WebApplicationBuilder builder)
         {
-            var connectionString = builder.Configuration.GetConnectionString("postgresql");
+            var connectionString = builder.Configuration.GetConnectionString("postgresqlCon");
 
             builder.Services.AddScoped<GetConnection>(sp =>
             async () =>
