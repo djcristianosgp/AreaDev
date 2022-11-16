@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>console.ico</ApplicationIcon>
+    <ApplicationIcon>icons8_api.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="console.ico" />
+    <Content Include="icons8_api.ico" />
   </ItemGroup>
 
   <ItemGroup>
