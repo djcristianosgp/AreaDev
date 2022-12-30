@@ -386,10 +386,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CFsqlCe.Dal\CFSqlCe.Dal.csproj">
-      <Project>{eb4a49e2-feb6-4fa9-89d8-f75eca3299c3}</Project>
-      <Name>CFSqlCe.Dal</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FIPE\FIPE.csproj">
       <Project>{410fc40f-9997-4be9-8a20-209d5b478a03}</Project>
       <Name>FIPE</Name>
