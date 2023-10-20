@@ -263,5 +263,11 @@ namespace Teste_API.Telas
                 LerArquivo(opArquivo.FileName);
             }
         }
+
+        private void btnGetAPI_Click(object sender, EventArgs e)
+        {
+            frmGetAPI GetAPIDados = new frmGetAPI();
+            GetAPIDados.ShowDialog();
+        }
     }
 }

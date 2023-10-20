@@ -42,6 +42,7 @@
             this.txtEndpointUri = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbConfigure = new System.Windows.Forms.TabPage();
+            this.btnGetAPI = new System.Windows.Forms.Button();
             this.btnAddHeader = new System.Windows.Forms.Button();
             this.btnRemoveHeader = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -206,6 +207,7 @@
             // 
             // tbConfigure
             // 
+            this.tbConfigure.Controls.Add(this.btnGetAPI);
             this.tbConfigure.Controls.Add(this.btnAddHeader);
             this.tbConfigure.Controls.Add(this.btnRemoveHeader);
             this.tbConfigure.Controls.Add(this.label4);
@@ -217,6 +219,17 @@
             this.tbConfigure.TabIndex = 1;
             this.tbConfigure.Text = "Configurações";
             this.tbConfigure.UseVisualStyleBackColor = true;
+            // 
+            // btnGetAPI
+            // 
+            this.btnGetAPI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGetAPI.Image = ((System.Drawing.Image)(resources.GetObject("btnGetAPI.Image")));
+            this.btnGetAPI.Location = new System.Drawing.Point(607, 1);
+            this.btnGetAPI.Name = "btnGetAPI";
+            this.btnGetAPI.Size = new System.Drawing.Size(23, 23);
+            this.btnGetAPI.TabIndex = 11;
+            this.btnGetAPI.UseVisualStyleBackColor = true;
+            this.btnGetAPI.Click += new System.EventHandler(this.btnGetAPI_Click);
             // 
             // btnAddHeader
             // 
@@ -484,5 +497,6 @@
         private Label label6;
         private OpenFileDialog opArquivo;
         private Panel panel1;
+        private Button btnGetAPI;
     }
 }
