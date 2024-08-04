@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj": {}
+    "D:\\Area27\\Dev\\AreaDev\\Area27\\Filmes\\Filmes.csproj": {}
   },
   "projects": {
-    "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj": {
+    "D:\\Area27\\Dev\\AreaDev\\Area27\\Filmes\\Filmes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
+        "projectUniqueName": "D:\\Area27\\Dev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
         "projectName": "Filmes",
-        "projectPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
-        "packagesPath": "C:\\Users\\DevReport01\\.nuget\\packages\\",
-        "outputPath": "D:\\RGSystem\\RGCidadao\\service\\AreaDev\\AreaDev\\Area27\\Filmes\\obj\\",
+        "projectPath": "D:\\Area27\\Dev\\AreaDev\\Area27\\Filmes\\Filmes.csproj",
+        "packagesPath": "C:\\Users\\djcri\\.nuget\\packages\\",
+        "outputPath": "D:\\Area27\\Dev\\AreaDev\\Area27\\Filmes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DevReport01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\djcri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,12 +27,10 @@
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
-          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/AMskZhWucCf6UbNgGj8kbtGUTgMLi6kDQRYDfh8LLMPHvdwfpZ/api": {},
-          "https://pkgs.dev.azure.com/rgsystem/SDK/_packaging/RGSystemSDK/nuget/v3/index.json": {}
+          "https://nuget.devexpress.com/BrXMv8uKWtQCIzVCTQqv5OJaaHvdYsFiFjNaV6vPZmTn9OXwnm/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -44,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
