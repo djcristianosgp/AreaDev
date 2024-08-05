@@ -1,9 +1,15 @@
-﻿namespace area_27_dashboard.Models
+﻿using Supabase.Postgrest.Attributes;
+
+namespace area_27_dashboard.Models
 {
+    [Table("Usuario")]
     public class UsuarioViewModel
     {
+        [PrimaryKey("id")]
         public int usuarioid { get; set; }
+        [Column("ativo")]
         public bool ativo { get; set; }
+        [Column("dados")]
         public Dados dados { get; set; } = new Dados();
         public PermissoesViewModel permissoes { get; set; } = new PermissoesViewModel();
 
