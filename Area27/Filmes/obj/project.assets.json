@@ -82,7 +82,8 @@
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.devexpress.com/AMskZhWucCf6UbNgGj8kbtGUTgMLi6kDQRYDfh8LLMPHvdwfpZ/api": {},
-        "https://nuget.devexpress.com/BrXMv8uKWtQCIzVCTQqv5OJaaHvdYsFiFjNaV6vPZmTn9OXwnm/api/v3/index.json": {}
+        "https://nuget.devexpress.com/BrXMv8uKWtQCIzVCTQqv5OJaaHvdYsFiFjNaV6vPZmTn9OXwnm/api/v3/index.json": {},
+        "https://pkgs.dev.azure.com/rgsystem/SDK/_packaging/RGSystemSDK/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {

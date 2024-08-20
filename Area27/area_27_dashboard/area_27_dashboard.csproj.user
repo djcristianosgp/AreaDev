@@ -25,6 +25,9 @@
     <Compile Update="Views\FrmDashboardView.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\FrmGerarChaveLiberacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

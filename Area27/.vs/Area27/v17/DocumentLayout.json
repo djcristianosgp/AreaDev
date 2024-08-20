@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\Area27\\Dev\\AreaDev\\Area27\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\db\\basemodelsupabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\db\\basemodelsupabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\uteis\\validacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\uteis\\validacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\uteis\\inicializasystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\uteis\\inicializasystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\uteis\\uteisgerais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\uteis\\uteisgerais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\db\\dbconnectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\db\\dbconnectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\views\\frmdashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\views\\frmdashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\views\\frmgerarchaveliberacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\views\\frmgerarchaveliberacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|d:\\area27\\dev\\areadev\\area27\\area_27_dashboard\\uteis\\chaveliberacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9192FB-DC73-4B93-B1B7-BFC53A624C0C}|area_27_dashboard\\area_27_dashboard.csproj|solutionrelative:area_27_dashboard\\uteis\\chaveliberacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DbConnectionProvider.cs",
-              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\DB\\DbConnectionProvider.cs",
-              "RelativeDocumentMoniker": "area_27_dashboard\\DB\\DbConnectionProvider.cs",
-              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\DB\\DbConnectionProvider.cs",
-              "RelativeToolTip": "area_27_dashboard\\DB\\DbConnectionProvider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:28:59.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Form1.cs",
-              "RelativeDocumentMoniker": "area_27_dashboard\\Form1.cs",
-              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Form1.cs",
-              "RelativeToolTip": "area_27_dashboard\\Form1.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAtwBYAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T23:14:16.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\appsettings.json",
-              "RelativeDocumentMoniker": "area_27_dashboard\\appsettings.json",
-              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\appsettings.json",
-              "RelativeToolTip": "area_27_dashboard\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAADjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-05T23:13:37.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseModelSupabase.cs",
-              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\DB\\BaseModelSupabase.cs",
-              "RelativeDocumentMoniker": "area_27_dashboard\\DB\\BaseModelSupabase.cs",
-              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\DB\\BaseModelSupabase.cs",
-              "RelativeToolTip": "area_27_dashboard\\DB\\BaseModelSupabase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Title": "InicializaSystem.cs",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\InicializaSystem.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Uteis\\InicializaSystem.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\InicializaSystem.cs",
+              "RelativeToolTip": "area_27_dashboard\\Uteis\\InicializaSystem.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAWwBYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T22:55:49.269Z",
+              "WhenOpened": "2024-08-20T23:46:12.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioViewModel.cs",
-              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Models\\UsuarioViewModel.cs",
-              "RelativeDocumentMoniker": "area_27_dashboard\\Models\\UsuarioViewModel.cs",
-              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Models\\UsuarioViewModel.cs",
-              "RelativeToolTip": "area_27_dashboard\\Models\\UsuarioViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Views\\FrmLogin.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmLogin.cs",
+              "RelativeToolTip": "area_27_dashboard\\Views\\FrmLogin.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwA8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T22:37:58.297Z",
+              "WhenOpened": "2024-08-20T23:42:05.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmDashboardView.cs",
-              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmDashboardView.cs",
-              "RelativeDocumentMoniker": "area_27_dashboard\\Views\\FrmDashboardView.cs",
-              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmDashboardView.cs",
-              "RelativeToolTip": "area_27_dashboard\\Views\\FrmDashboardView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Validacoes.cs",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\Validacoes.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Uteis\\Validacoes.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\Validacoes.cs",
+              "RelativeToolTip": "area_27_dashboard\\Uteis\\Validacoes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T13:37:43.12Z",
+              "WhenOpened": "2024-08-20T23:38:14.276Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmLogin.cs [Projeto]",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Views\\FrmLogin.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmLogin.cs [Projeto]",
+              "RelativeToolTip": "area_27_dashboard\\Views\\FrmLogin.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T23:34:12.902Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Program.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Program.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Program.cs",
+              "RelativeToolTip": "area_27_dashboard\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAtwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T23:01:20.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UteisGerais.cs",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\UteisGerais.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Uteis\\UteisGerais.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\UteisGerais.cs",
+              "RelativeToolTip": "area_27_dashboard\\Uteis\\UteisGerais.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T23:10:33.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChaveLiberacao.cs",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\ChaveLiberacao.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Uteis\\ChaveLiberacao.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Uteis\\ChaveLiberacao.cs",
+              "RelativeToolTip": "area_27_dashboard\\Uteis\\ChaveLiberacao.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAlwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T21:09:51.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmGerarChaveLiberacao.cs [Projeto]",
+              "DocumentMoniker": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmGerarChaveLiberacao.cs",
+              "RelativeDocumentMoniker": "area_27_dashboard\\Views\\FrmGerarChaveLiberacao.cs",
+              "ToolTip": "D:\\Area27\\Dev\\AreaDev\\Area27\\area_27_dashboard\\Views\\FrmGerarChaveLiberacao.cs [Projeto]",
+              "RelativeToolTip": "area_27_dashboard\\Views\\FrmGerarChaveLiberacao.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T20:57:00.096Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

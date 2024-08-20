@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using area_27_dashboard.Uteis;
 
 namespace area_27_dashboard.Views
 {
@@ -16,5 +8,34 @@ namespace area_27_dashboard.Views
         {
             InitializeComponent();
         }
+
+        private void Entrar_Click(object sender, EventArgs e)
+        {
+            if (Valida())
+            {
+
+            }
+        }
+
+        private bool Valida()
+        {
+            if (String.IsNullOrEmpty(txtEmail.Text))
+            {
+                MessageBox.Show($"Campo de email deve ser preenchido!!{Environment.NewLine}Corrija e tente novamente!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            if (String.IsNullOrEmpty(txtSenha.Text))
+            {
+                MessageBox.Show($"Campo de senha deve ser preenchido!!{Environment.NewLine}Corrija e tente novamente!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            if (!Validacoes.IsValidEmail(txtEmail.Text))
+            {
+                MessageBox.Show($"Não é um email válido!!{Environment.NewLine}Corrija e tente novamente!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            return true;
+        }
+
     }
 }
