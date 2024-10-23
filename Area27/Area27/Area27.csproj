@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Filmes\Filmes.csproj" />
   </ItemGroup>
 

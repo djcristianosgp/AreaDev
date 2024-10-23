@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\RGSystemDev\\Fontes\\desktop\\AreaDev\\Area27\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D532417-0821-4E45-9F1B-1D228A834F97}|Area27\\Area27.csproj|c:\\rgsystemdev\\fontes\\desktop\\areadev\\area27\\area27\\telas\\frmcontapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D532417-0821-4E45-9F1B-1D228A834F97}|Area27\\Area27.csproj|solutionrelative:area27\\telas\\frmcontapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -15,6 +11,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2D532417-0821-4E45-9F1B-1D228A834F97}|Area27\\Area27.csproj|c:\\rgsystemdev\\fontes\\desktop\\areadev\\area27\\area27\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D532417-0821-4E45-9F1B-1D228A834F97}|Area27\\Area27.csproj|solutionrelative:area27\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D532417-0821-4E45-9F1B-1D228A834F97}|Area27\\Area27.csproj|c:\\rgsystemdev\\fontes\\desktop\\areadev\\area27\\area27\\telas\\frmcontapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D532417-0821-4E45-9F1B-1D228A834F97}|Area27\\Area27.csproj|solutionrelative:area27\\telas\\frmcontapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{035E16F4-7550-43A0-84BF-AAB571F39ACA}|Area_Imagem\\Area_Imagem.csproj|c:\\rgsystemdev\\fontes\\desktop\\areadev\\area27\\area_imagem\\funcoes\\pessoadetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,7 +68,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -100,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Microsoft.NET.EolTargetFrameworks.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
@@ -113,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\RGSystemDev\\Fontes\\desktop\\AreaDev\\Area27\\Area27\\Program.cs",
               "RelativeDocumentMoniker": "Area27\\Program.cs",
@@ -139,13 +139,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FrmContaPessoas.cs",
               "DocumentMoniker": "C:\\RGSystemDev\\Fontes\\desktop\\AreaDev\\Area27\\Area27\\Telas\\FrmContaPessoas.cs",
               "RelativeDocumentMoniker": "Area27\\Telas\\FrmContaPessoas.cs",
               "ToolTip": "C:\\RGSystemDev\\Fontes\\desktop\\AreaDev\\Area27\\Area27\\Telas\\FrmContaPessoas.cs",
               "RelativeToolTip": "Area27\\Telas\\FrmContaPessoas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T18:53:01.495Z",
               "EditorCaption": ""
